@@ -5,8 +5,6 @@ import Navbar from "@/components/sections/navbar";
 import HeroSection from "@/components/sections/hero";
 import WorkReel from "@/components/sections/work-reel";
 import ServicesSection from "@/components/sections/services";
-import WorkCarousel from "@/components/sections/work-carousel";
-import FeaturesShowcase from "@/components/sections/features-showcase";
 import ProcessSection from "@/components/sections/process";
 import Testimonials from "@/components/sections/testimonials";
 import FAQSection from "@/components/sections/faq";
@@ -41,13 +39,7 @@ export default function Home() {
         <ServicesSection />
       </AnimatedSection>
       
-      <AnimatedSection>
-        <FeaturesShowcase />
-      </AnimatedSection>
-      
-      <AnimatedSection>
-        <WorkCarousel />
-      </AnimatedSection>
+    
       
       <AnimatedSection>
         <ProcessSection />

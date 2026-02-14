@@ -11,13 +11,13 @@ const FooterCTA = () => {
           <h2 className="text-[48px] md:text-[64px] font-semibold text-white tracking-tight leading-[1.1]">
             Ready to <span className="text-[#4ade80]">convert more leads?</span>
           </h2>
-          <a
+          {/* <a
             href="https://dhrumilk.lemonsqueezy.com/buy/64bb66ee-25b7-4a33-a6fe-7569bd9dedc6"
             className="mt-8 md:mt-0 flex items-center gap-2 bg-[#4ade80] text-[#050505] px-8 py-5 rounded-full font-semibold text-[16px] hover:scale-105 transition-transform duration-300 toxic-glow"
           >
             Book a Discovery Call
             <ArrowUpRight className="w-5 h-5" />
-          </a>
+          </a> */}
         </div>
 
         {/* Grid Section */}
@@ -73,7 +73,7 @@ const FooterCTA = () => {
             <div className="grid grid-cols-2 gap-6">
               {/* LinkedIn Link */}
               <a 
-                href="https://linkedin.com" 
+                href="https://www.linkedin.com/company/final-verzion/" 
                 className="bg-[#0a0a0a] rounded-[24px] border border-white/10 p-6 flex flex-col items-center justify-center gap-2 hover:bg-white/5 transition-colors group"
               >
                 <Linkedin className="w-8 h-8 text-[#4ade80] mb-2" />
@@ -82,7 +82,7 @@ const FooterCTA = () => {
 
               {/* Email Link */}
               <a 
-                href="mailto:hello@finalverzion.com" 
+                href="mailto:contact@finalverzion.com" 
                 className="bg-[#0a0a0a] rounded-[24px] border border-white/10 p-6 flex flex-col items-center justify-center gap-2 hover:bg-white/5 transition-colors group"
               >
                 <div className="w-8 h-8 flex items-center justify-center">
@@ -97,7 +97,7 @@ const FooterCTA = () => {
         {/* Bottom Footer Credits */}
         <div className="w-full flex flex-col md:flex-row justify-between items-center border-t border-white/10 pt-8 mt-10">
           <p className="text-[#999999] text-sm mb-4 md:mb-0">
-            © 2024 Final Verzion. All rights reserved.
+            © 2026 Final Verzion. All rights reserved.
           </p>
           <div className="flex gap-8">
             <a href="#hero" className="text-[#999999] text-sm hover:text-white transition-colors">Contact</a>

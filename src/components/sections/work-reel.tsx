@@ -9,11 +9,11 @@ const VIDEOS = [
     hash: '06aaffc6b5',
     title: 'Motion Graphics Showreel',
   },
-  {
-    type: 'youtube',
-    id: 'kZPX4xBq7A0',
-    title: 'Zendesk Demo: The Basics',
-  },
+  // {
+  //   type: 'youtube',
+  //   id: 'kZPX4xBq7A0',
+  //   title: 'Zendesk Demo: The Basics',
+  // },
   {
     type: 'vimeo',
     id: '1125850625',
@@ -25,6 +25,12 @@ const VIDEOS = [
     id: '1051141040',
     hash: '29901d2445',
     title: 'Brand Video',
+  },
+  {
+    type: 'vimeo',
+    id: '925756415',
+    hash: '864b8496c4',
+    title: '2d Explainer Illustrated Video',  
   },
 ];
 
