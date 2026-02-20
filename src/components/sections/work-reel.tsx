@@ -14,6 +14,7 @@ const VIDEOS = [
   //   id: 'kZPX4xBq7A0',
   //   title: 'Zendesk Demo: The Basics',
   // },
+  // <iframe title="vimeo-player" src="https://player.vimeo.com/video/724789978?h=1b21fa7fa6" width="640" height="360" frameborder="0" referrerpolicy="strict-origin-when-cross-origin" allow="autoplay; fullscreen; picture-in-picture; clipboard-write; encrypted-media; web-share"   allowfullscreen></iframe>
   {
     type: 'vimeo',
     id: '1125850625',
@@ -27,6 +28,12 @@ const VIDEOS = [
     title: 'Brand Video',
   },
   {
+    type: 'vimeo',
+    id: '724789978',
+    hash: '1b21fa7fa6',
+    title: '2d Explainer Illustrated Video',  
+  },
+    {
     type: 'vimeo',
     id: '925756415',
     hash: '864b8496c4',
