@@ -23,7 +23,8 @@ export default function Navbar() {
   const navLinks = [
     { name: 'Work', href: '#work' },
     { name: 'Process', href: '#process' },
-    { name: 'FAQs', href: '#faq' },
+    
+    { name: 'Case Study', href: '/case-study' },
     { name: 'Contact', href: '#contact' },
   ];
 
