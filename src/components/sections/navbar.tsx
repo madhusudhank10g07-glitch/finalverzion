@@ -78,29 +78,31 @@ export default function Navbar() {
 
           {/* CTA Button Section */}
           <div className="flex items-center flex-shrink-0">
-            <a
-              href="#contact"
-              className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-[14px] font-bold transition-all duration-200 hover:scale-[1.05] active:scale-[0.95] toxic-glow"
-            >
-              <span>Get in Touch</span>
-              <svg 
-                width="14" 
-                height="14" 
-                viewBox="0 0 14 14" 
-                fill="none" 
-                xmlns="http://www.w3.org/2000/svg"
-                className="translate-y-[0.5px]"
-              >
-                <path 
-                  d="M1 7H13M13 7L7 1M13 7L7 13" 
-                  stroke="currentColor" 
-                  strokeWidth="2" 
-                  strokeLinecap="round" 
-                  strokeLinejoin="round"
-                />
-              </svg>
-            </a>
-          </div>
+  <a
+    href="https://calendly.com/madhumk0709m/30min"
+    target="_blank"
+    rel="noopener noreferrer"
+    className="flex items-center gap-2 bg-primary text-primary-foreground px-6 py-2.5 rounded-full text-[14px] font-bold transition-all duration-200 hover:scale-[1.05] active:scale-[0.95] toxic-glow"
+  >
+    <span>Book a Strategy Call</span>
+    <svg
+      width="14"
+      height="14"
+      viewBox="0 0 14 14"
+      fill="none"
+      xmlns="http://www.w3.org/2000/svg"
+      className="translate-y-[0.5px]"
+    >
+      <path
+        d="M1 7H13M13 7L7 1M13 7L7 13"
+        stroke="currentColor"
+        strokeWidth="2"
+        strokeLinecap="round"
+        strokeLinejoin="round"
+      />
+    </svg>
+  </a>
+</div>
         </motion.nav>
       </div>
 

@@ -248,6 +248,7 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
       setStatus("success");
       setFormData({ name: "", company: "", email: "", phone: "" });
       setBudget(5000);
+      window.location.href = "https://calendly.com/madhumk0709m/30min";
     } catch (error) {
       console.error("Form Error:", error);
       setStatus("error");

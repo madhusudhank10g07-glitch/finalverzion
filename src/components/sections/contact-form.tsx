@@ -286,6 +286,8 @@ export default function ContactForm() {
       setStatus('success');
       setFormData({ name: '', email: '', company: '', message: '' });
       
+
+      window.location.href = "https://calendly.com/madhumk0709m/30min";
       // Reset to idle after 5 seconds
       setTimeout(() => setStatus('idle'), 5000);
 
