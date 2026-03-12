@@ -104,7 +104,24 @@ export default function Home() {
     }
   };
 
+  const schema = {
+  "@context": "https://schema.org",
+  "@type": "Organization",
+  name: "Final Verzion",
+  url: "https://finalverzion.com",
+  logo: "https://finalverzion.com/logo.png",
+  sameAs: [
+    "https://www.linkedin.com/company/finalverzion"
+  ]
+};
+
+
   return (
+    <>
+    <script
+type="application/ld+json"
+dangerouslySetInnerHTML={{ __html: JSON.stringify(schema) }}
+/>
     <main className="min-h-screen bg-background text-foreground font-sans overflow-x-hidden relative">
       
       {/* The Modal Component */}
@@ -152,5 +169,6 @@ export default function Home() {
         <FooterCTA />
       </AnimatedSection>
     </main>
+    </>
   );
 }
