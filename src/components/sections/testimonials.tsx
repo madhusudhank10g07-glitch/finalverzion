@@ -5,19 +5,22 @@ import { ChevronLeft, ChevronRight, Building2 } from 'lucide-react';
 
 const TESTIMONIALS = [
   {
-    author: "Sarah Chen",
-    role: "CMO, TechScale Inc.",
-    quote: '"Final Verzion transformed our product launch with a video that drove 3x more conversions than our previous campaigns. Their understanding of B2B messaging is exceptional."',
+    author: "Hiten Shah",
+    role: "Co-Founder, Crazy Egg",
+    quote:
+      "We used a simple animated explainer video to show how heatmaps work, and it became one of our most effective sales assets."
   },
   {
-    author: "Michael Rodriguez",
-    role: "VP Marketing, CloudSync Solutions",
-    quote: '"Working with Final Verzion was seamless. They delivered high-quality motion graphics that perfectly captured our brand essence and resonated with our enterprise clients."',
+    author: "Todd Olson",
+    role: "CEO, Pendo",
+    quote:
+      "Explaining complex software clearly is critical. Video helped us communicate our product vision faster to customers and investors."
   },
   {
-    author: "Jennifer Walsh",
-    role: "Director of Growth, DataFlow Analytics",
-    quote: '"The team at Final Verzion doesn\'t just create videos—they create conversion machines. Our lead generation increased by 150% after launching their video content."',
+    author: "Amit Bendov",
+    role: "CEO, Gong",
+    quote:
+      "Video helped us communicate the value of conversation intelligence in a way slides never could."
   }
 ];
 

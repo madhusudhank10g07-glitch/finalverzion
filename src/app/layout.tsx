@@ -8,7 +8,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 
 export const metadata: Metadata = {
   title: "Final Verzion",
-  description: "Final Verzion B2B Video production explainer video services company ",
+  description: "Final Verzion B2B Video production explainer video services company we serve explainer videos , product demo ,premium looking marketing video ads for startups, tech companies across all size across all foreign countries from india   ",
 };
 
 export default function RootLayout({
