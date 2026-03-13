@@ -9,6 +9,7 @@ import { GoogleAnalytics } from '@next/third-parties/google'
 export const metadata: Metadata = {
   title: "Final Verzion",
   description: "Final Verzion B2B Video production explainer video services company we serve explainer videos , product demo ,premium looking marketing video ads for startups, tech companies across all size across all foreign countries from india   ",
+viewport: "width=device-width, initial-scale=1",
 };
 
 export default function RootLayout({
@@ -18,24 +19,7 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="en">
-      <body className="antialiased">
-        <Script
-          id="orchids-browser-logs"
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts/orchids-browser-logs.js"
-          strategy="afterInteractive"
-          data-orchids-project-id="cd2dbe6d-c060-4169-a10e-7b8ca2eea9f2"
-        />
-        <ErrorReporter />
-        <Script
-          src="https://slelguoygbfzlpylpxfs.supabase.co/storage/v1/object/public/scripts//route-messenger.js"
-          strategy="afterInteractive"
-          data-target-origin="*"
-          data-message-type="ROUTE_CHANGE"
-          data-include-search-params="true"
-          data-only-in-iframe="true"
-          data-debug="true"
-          data-custom-data='{"appName": "YourApp", "version": "1.0.0", "greeting": "hi"}'
-        />
+      <body className="antialiased overflow-x-hidden w-full max-w-[100vw]">
         {children}
          <GoogleAnalytics gaId="G-PZ21G7CZZB" />
         <VisualEditsMessenger />

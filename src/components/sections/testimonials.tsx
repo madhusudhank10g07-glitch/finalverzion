@@ -1,111 +1,75 @@
+// Testimonials.tsx
 "use client";
 
-import React, { useState, useCallback } from 'react';
-import { ChevronLeft, ChevronRight, Building2 } from 'lucide-react';
+import React, { useState, useCallback } from "react";
+import { ChevronLeft, ChevronRight, Building2 } from "lucide-react";
 
 const TESTIMONIALS = [
-  {
-    author: "Hiten Shah",
-    role: "Co-Founder, Crazy Egg",
-    quote:
-      "We used a simple animated explainer video to show how heatmaps work, and it became one of our most effective sales assets."
-  },
-  {
-    author: "Todd Olson",
-    role: "CEO, Pendo",
-    quote:
-      "Explaining complex software clearly is critical. Video helped us communicate our product vision faster to customers and investors."
-  },
-  {
-    author: "Amit Bendov",
-    role: "CEO, Gong",
-    quote:
-      "Video helped us communicate the value of conversation intelligence in a way slides never could."
-  }
+  { author: "Hiten Shah", role: "Co-Founder, Crazy Egg", quote: "We used a simple animated explainer video to show how heatmaps work, and it became one of our most effective sales assets." },
+  { author: "Todd Olson", role: "CEO, Pendo", quote: "Explaining complex software clearly is critical. Video helped us communicate our product vision faster to customers and investors." },
+  { author: "Amit Bendov", role: "CEO, Gong", quote: "Video helped us communicate the value of conversation intelligence in a way slides never could." },
 ];
 
 export default function Testimonials() {
   const [activeIndex, setActiveIndex] = useState(0);
 
-  const handleNext = useCallback(() => {
-    setActiveIndex((prev) => (prev + 1) % TESTIMONIALS.length);
-  }, []);
-
-  const handlePrev = useCallback(() => {
-    setActiveIndex((prev) => (prev - 1 + TESTIMONIALS.length) % TESTIMONIALS.length);
-  }, []);
+  const handleNext = useCallback(() => setActiveIndex((p) => (p + 1) % TESTIMONIALS.length), []);
+  const handlePrev = useCallback(() => setActiveIndex((p) => (p - 1 + TESTIMONIALS.length) % TESTIMONIALS.length), []);
 
   return (
-    <section className="relative w-full py-[120px] bg-[#050505] overflow-hidden">
-      <div className="container mx-auto px-6 flex flex-col items-center">
-        
-        {/* Testimonial Header */}
-        <div className="mb-12 text-center">
-          <h2 className="text-white text-[48px] md:text-[64px] font-semibold tracking-tight">
-            Client <span className="text-[#4ade80]">Results.</span>
-          </h2>
-          <p className="text-[#999999] text-[18px] mt-4 max-w-[500px] mx-auto">
-            See what business leaders say about working with Final Verzion.
-          </p>
+    <section className="relative w-full py-12 md:py-24 bg-[#050505] overflow-hidden px-4 sm:px-6 lg:px-12">
+      <div className="mx-auto max-w-6xl flex flex-col items-center">
+        <div className="text-center mb-8">
+          <h2 className="text-3xl md:text-5xl font-semibold text-white">Client <span className="text-[#4ade80]">Results.</span></h2>
+          <p className="text-[#bdbdbd] mt-3 max-w-2xl">See what business leaders say about working with Final Verzion.</p>
         </div>
 
-        <div className="relative flex items-center justify-center w-full max-w-[1000px]">
-          {/* Navigation - Left Arrow */}
-          <button 
+        <div className="relative w-full max-w-3xl">
+          {/* left control (visible on mobile too as smaller buttons) */}
+          <button
             onClick={handlePrev}
-            className="absolute left-[-60px] md:left-0 z-10 p-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors hidden md:flex items-center justify-center"
             aria-label="Previous testimonial"
+            className="absolute left-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
           >
-            <ChevronLeft size={20} className="text-white" />
+            <ChevronLeft className="w-5 h-5 text-white" />
           </button>
 
-          {/* Testimonial Card */}
-          <div className="relative w-full max-w-[600px] aspect-[16/8] bg-[#0a0a0a] rounded-[24px] border border-white/10 p-8 flex flex-col justify-center overflow-hidden">
-             {/* Green Accent Lighting / Glow */}
-             <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-full bg-[#4ade80] opacity-[0.12] blur-[60px] pointer-events-none rounded-full" />
-             
-             <div className="relative z-10">
-                <div className="flex items-center gap-4 mb-6">
-                  <div className="relative w-[48px] h-[48px] rounded-full overflow-hidden border border-white/10 bg-[#4ade80]/20 flex items-center justify-center">
+          <div className="mx-auto bg-[#0a0a0a] rounded-2xl border border-white/10 p-6 md:p-10">
+            <div className="relative overflow-hidden">
+              <div className="absolute top-0 left-1/2 -translate-x-1/2 w-1/2 h-full bg-[#4ade80] opacity-10 blur-[60px] pointer-events-none rounded-full" />
+
+              <div className="relative z-10 flex items-start gap-4 md:gap-6">
+                <div className="flex-shrink-0">
+                  <div className="w-12 h-12 rounded-full border border-white/10 flex items-center justify-center bg-[#4ade80]/10">
                     <Building2 className="w-6 h-6 text-[#4ade80]" />
                   </div>
-                  <div>
-                    <h4 className="text-white text-[18px] font-semibold leading-tight">
-                      {TESTIMONIALS[activeIndex].author}
-                    </h4>
-                    <p className="text-[#999999] text-[14px]">
-                      {TESTIMONIALS[activeIndex].role}
-                    </p>
-                  </div>
                 </div>
 
-                <div className="max-w-[500px]">
-                  <p className="text-white text-[18px] leading-[1.4] font-normal tracking-tight">
-                    {TESTIMONIALS[activeIndex].quote}
-                  </p>
+                <div>
+                  <h4 className="text-white font-semibold">{TESTIMONIALS[activeIndex].author}</h4>
+                  <p className="text-[#bdbdbd] text-sm mb-4">{TESTIMONIALS[activeIndex].role}</p>
+                  <p className="text-white text-base md:text-lg leading-relaxed max-w-xl">{TESTIMONIALS[activeIndex].quote}</p>
                 </div>
-             </div>
+              </div>
+            </div>
           </div>
 
-          {/* Navigation - Right Arrow */}
-          <button 
+          <button
             onClick={handleNext}
-            className="absolute right-[-60px] md:right-0 z-10 p-3 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors hidden md:flex items-center justify-center"
             aria-label="Next testimonial"
+            className="absolute right-0 top-1/2 -translate-y-1/2 z-10 p-2 rounded-full border border-white/10 bg-white/5 hover:bg-white/10 transition-colors"
           >
-            <ChevronRight size={20} className="text-white" />
+            <ChevronRight className="w-5 h-5 text-white" />
           </button>
         </div>
 
-        {/* Pagination Dots */}
-        <div className="flex gap-2.5 mt-10">
-          {TESTIMONIALS.map((_, index) => (
+        <div className="flex gap-2.5 mt-6">
+          {TESTIMONIALS.map((_, idx) => (
             <button
-              key={index}
-              onClick={() => setActiveIndex(index)}
-              className={`w-2.5 h-2.5 rounded-full transition-all duration-300 ${
-                index === activeIndex ? "bg-[#4ade80]" : "bg-[#4ade80]/20"
-              }`}
+              key={idx}
+              onClick={() => setActiveIndex(idx)}
+              aria-label={`Go to testimonial ${idx + 1}`}
+              className={`w-2.5 h-2.5 rounded-full transition ${idx === activeIndex ? "bg-[#4ade80]" : "bg-[#4ade80]/20"}`}
             />
           ))}
         </div>
