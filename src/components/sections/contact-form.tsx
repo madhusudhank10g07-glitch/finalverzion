@@ -3,9 +3,9 @@
 
 import React, { useState } from "react";
 import { Send, Loader2, CheckCircle, AlertCircle } from "lucide-react";
-
+// deploy id AKfycbzi_C8335YizA2lvsB1NQ1tuIrM-TzTZqB4ICTAeEksHVN4J98WjYyJUfmryEohNx8
 const GOOGLE_SCRIPT_URL =
-  "https://script.google.com/macros/s/AKfycbzaG3KJ1VoYaHdOgecVerVwx2Z9DGbJnx9LioMSFrSSfwpsHGVkmEIzpHoGaV3h6Y6I/exec";
+  "https://script.google.com/macros/s/AKfycbzi_C8335YizA2lvsB1NQ1tuIrM-TzTZqB4ICTAeEksHVN4J98WjYyJUfmryEohNx8/exec";
 
 interface FormData {
   name: string;
