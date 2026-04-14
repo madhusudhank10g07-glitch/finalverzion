@@ -1,7 +1,7 @@
 "use client";
 
 import { motion } from "motion/react";
-import { ChevronDown } from "lucide-react";
+import Image from "next/image";
 import { generateWave, waves } from "@/lib/wave";
 
 export default function Hero() {
@@ -109,12 +109,22 @@ export default function Hero() {
         transition={{ duration: 0.8, delay: 0.8 }}
         className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto px-4 sm:px-0"
       >
-        <button className="w-full sm:w-auto bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
-          Get a Free Quote <ChevronDown className="w-4 h-4 -rotate-90" />
-        </button>
-        <button className="w-full sm:w-auto bg-[#e8e4db] hover:bg-[#dfdbd1] text-[#1a1a1a] px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
-          View Portfolio
-        </button>
+        <div className="flex justify-center sm:justify-start">
+      <a
+        href="https://clutch.co/profile/final-verzion"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block hover:scale-105 transition-transform duration-300"
+      >
+        <Image
+          src="/clutch.png" // replace with actual clutch badge
+          alt="Clutch 5 Star Reviews"
+          width={180}
+          height={60}
+           className="object-contain rounded-lg"
+        />
+      </a>
+    </div>
       </motion.div>
     </section>
   );
