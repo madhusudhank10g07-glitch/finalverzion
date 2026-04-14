@@ -1,5 +1,5 @@
 "use client";
-
+import { use } from "react";
 import { useState } from "react";
 import Link from "next/link";
 import {
@@ -14,13 +14,13 @@ import {
 import { blogs } from "@/lib/blogs";
 
 interface BlogDetailsPageProps {
-  params: { id: string };
+  params: Promise<{ id: string }>;
 }
-
 export default function BlogDetailsPage({ params }: BlogDetailsPageProps) {
+  const { id } = use(params);
   const [copied, setCopied] = useState(false);
 
-  const blog = blogs.find((b) => b.id === params.id) ?? blogs[0];
+  const blog = blogs.find(async (b) => b.id === (await params).id) ?? blogs[0];
 
   const shareUrl =
     typeof window !== "undefined" ? window.location.href : "";
