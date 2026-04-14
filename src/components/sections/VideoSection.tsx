@@ -5,7 +5,7 @@ import MuxPlayer from "@mux/mux-player-react";
 export default function VideoSection() {
   return (
    <section
-      className="w-full max-w-5xl mx-auto px-4 mt-12 relative z-20"
+      className="w-full max-w-5xl mx-auto px-4 mt-12 relative  "
       aria-label="Featured Video"
     >
       <h2 className="sr-only">SaaS Explainer Video Example</h2>

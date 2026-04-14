@@ -3,8 +3,61 @@
 import { motion } from "motion/react";
 import Image from "next/image";
 import { generateWave, waves } from "@/lib/wave";
+import { useEffect, useState } from "react";
 
 export default function Hero() {
+  const sentences = [
+    "Explain your SaaS",
+    "Explain your product",
+    "Explain your platform",
+    "Reduce Sales cycle",
+    "Accelerate onboarding",
+    "Pitch your startup",
+    "Pitch your product",
+    "Pitch to investors",
+    "Convert leads into clients",
+    "Reduce churn and support tickets",
+    "Engage your audience",
+    "Boost conversions",
+    "Simplify complex ideas",
+    "Show, don't tell",
+    "Make an impact",
+    "Craft your story",
+    "Elevate your brand",
+    "Stand out from the crowd",
+    "Turn viewers into customers",
+  ];
+
+  const [text, setText] = useState("");
+  const [index, setIndex] = useState(0);
+  const [isDeleting, setIsDeleting] = useState(false);
+
+  useEffect(() => {
+    const current = sentences[index];
+    let speed = isDeleting ? 40 : 80;
+
+    const timeout = setTimeout(() => {
+      setText((prev) =>
+        isDeleting
+          ? current.substring(0, prev.length - 1)
+          : current.substring(0, prev.length + 1)
+      );
+
+      // typing complete
+      if (!isDeleting && text === current) {
+        setTimeout(() => setIsDeleting(true), 1200);
+      }
+
+      // deleting complete → move next sentence
+      if (isDeleting && text === "") {
+        setIsDeleting(false);
+        setIndex((prev) => (prev + 1) % sentences.length);
+      }
+    }, speed);
+
+    return () => clearTimeout(timeout);
+  }, [text, isDeleting, index]);
+
   return (
     <section className="w-full relative pt-20 pb-10 flex flex-col items-center text-center px-4 z-10 overflow-hidden">
       {/* Premium Glowing Orb */}
@@ -83,15 +136,16 @@ export default function Hero() {
       </motion.div> */}
 
       <motion.h1
-        initial={{ opacity: 0, y: 20 }}
-        animate={{ opacity: 1, y: 0 }}
-        transition={{ duration: 0.8, delay: 0.4 }}
-        className="font-serif text-5xl md:text-7xl font-medium text-[#1a1a1a] max-w-4xl leading-[1.1] mb-6"
-      >
-        Explain Your SaaS in
-        <br />
-        Under 60 Seconds
-      </motion.h1>
+      initial={{ opacity: 0, y: 20 }}
+      animate={{ opacity: 1, y: 0 }}
+      transition={{ duration: 0.8, delay: 0.4 }}
+      className="font-serif text-5xl md:text-7xl font-medium text-[#1a1a1a] max-w-4xl leading-[1.1] mb-6"
+    >
+      {text}
+      <span className="animate-pulse">|</span>
+      <br />
+      Under 60 Seconds
+    </motion.h1>
 
       <motion.p
         initial={{ opacity: 0, y: 20 }}

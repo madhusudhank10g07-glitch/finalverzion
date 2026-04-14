@@ -111,7 +111,7 @@ export default function PortfolioSection() {
     <section
       id="portfolio"
       ref={ref}
-      className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col items-center z-10"
+      className="w-full max-w-7xl mx-auto px-4 py-20 flex flex-col items-center "
       aria-labelledby="portfolio-heading"
     >
       <div className="w-full text-center mb-12">

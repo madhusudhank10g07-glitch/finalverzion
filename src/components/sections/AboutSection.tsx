@@ -4,7 +4,7 @@ export default function AboutSection() {
   return (
     <section
       id="about"
-      className="w-full py-24 relative z-10 bg-white border-y border-[#e5e2db]"
+      className="w-full py-24 relative   bg-white border-y border-[#e5e2db]"
       aria-labelledby="about-heading"
     >
       <div className="max-w-7xl mx-auto px-4 flex flex-col md:flex-row items-center gap-16">

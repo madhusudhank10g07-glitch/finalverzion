@@ -32,7 +32,7 @@ export default function FAQSection() {
 
   return (
     <section
-      className="w-full max-w-7xl mx-auto px-4 py-24 z-10 flex flex-col lg:flex-row gap-16"
+      className="w-full max-w-7xl mx-auto px-4 py-24  flex flex-col lg:flex-row gap-16"
       aria-labelledby="faq-heading"
     >
       <div className="lg:w-1/3 flex flex-col items-start">

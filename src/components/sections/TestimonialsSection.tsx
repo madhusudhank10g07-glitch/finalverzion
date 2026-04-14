@@ -29,7 +29,7 @@ const testimonials = [
 export default function TestimonialsSection() {
   return (
     <section
-      className="w-full max-w-7xl mx-auto px-4 py-24 z-10"
+      className="w-full max-w-7xl mx-auto px-4 py-24  "
       aria-labelledby="testimonials-heading"
     >
       <div className="inline-flex items-center gap-2 text-primary font-medium text-sm mb-6">

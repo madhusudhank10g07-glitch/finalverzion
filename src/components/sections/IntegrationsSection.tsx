@@ -27,7 +27,7 @@ const platforms = [
 export default function IntegrationsSection() {
   return (
     <section
-      className="w-full py-24 relative z-10 overflow-hidden bg-[#f5f2eb]"
+      className="w-full py-24 relative   overflow-hidden bg-[#f5f2eb]"
       aria-labelledby="integrations-heading"
     >
       {/* Top row of platforms */}

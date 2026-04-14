@@ -3,7 +3,8 @@ import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'motion/react'
 import { ChevronDown, X, Menu } from 'lucide-react' 
- 
+import Image from "next/image";
+
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
  
@@ -11,7 +12,15 @@ export default function Navbar() {
     <header className="w-full relative z-50">
       <nav className="w-full flex items-center justify-between px-6 py-4 max-w-7xl mx-auto relative z-20 bg-[#f5f2eb]/80 backdrop-blur-sm border-b border-[#e5e2db]">
         <Link href="/" className="flex items-center gap-2">
-          <div className="w-8 h-8 bg-[#008c73] rounded flex items-center justify-center text-white font-bold text-xl leading-none">FV</div>
+          <div className="w-8 h-8 rounded-lg overflow-hidden">
+  <Image
+    src="/logofinal.png" // place your logo inside /public folder
+    alt="Logo"
+    width={32}
+    height={32}
+    className="object-cover w-full h-full"
+  />
+</div>
           <span className="text-xl font-semibold tracking-tight">Final Verzion</span>
         </Link>
 

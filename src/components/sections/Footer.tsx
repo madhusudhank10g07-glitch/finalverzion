@@ -2,7 +2,7 @@ import { Youtube, Twitter, Instagram } from 'lucide-react'
 
 export default function Footer() {
   return (
-    <footer className="w-full bg-[#0a1f1a] text-white pt-20 pb-10 relative z-10 overflow-hidden mt-10">
+    <footer className="w-full bg-[#0a1f1a] text-white pt-20 pb-10 relative   overflow-hidden mt-10">
       <div className="absolute inset-0 opacity-5" style={{ backgroundImage: 'radial-gradient(#ffffff 1px, transparent 1px)', backgroundSize: '16px 16px' }}></div>
       <div className="max-w-7xl mx-auto px-6 relative z-10">
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12 mb-20">

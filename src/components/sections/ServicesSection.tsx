@@ -29,7 +29,7 @@ export default function ServicesSection() {
   return (
     <section
       id="services"
-      className="w-full max-w-7xl mx-auto px-4 py-24 z-10"
+      className="w-full max-w-7xl mx-auto px-4 py-24 "
       aria-labelledby="services-heading"
     >
       <div className="flex flex-col md:flex-row gap-16 items-start">
