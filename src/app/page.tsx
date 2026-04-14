@@ -27,7 +27,7 @@ export default function HomePage() {
       {/* <PortalIntroSection />
       <PortalDashboardSection /> */}
       <ComparisonSection />
-      <PricingSection />
+      {/* <PricingSection /> */}
       <FAQSection />
       <CTASection />
     </main>

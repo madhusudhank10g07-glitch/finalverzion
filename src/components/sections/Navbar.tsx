@@ -19,7 +19,7 @@ export default function Navbar() {
           <Link href="/" className="hover:text-[#008c73] transition-colors">Home</Link>
           <a href="/#portfolio" className="hover:text-[#008c73] transition-colors">Portfolio</a>
           <a href="/#services" className="hover:text-[#008c73] transition-colors">Services</a>
-          <a href="/#pricing" className="hover:text-[#008c73] transition-colors">Pricing</a>
+          {/* <a href="/#pricing" className="hover:text-[#008c73] transition-colors">Pricing</a> */}
           <a href="/#about" className="hover:text-[#008c73] transition-colors">About Us</a>
           <Link href="/blog" className="hover:text-[#008c73] transition-colors font-semibold">Blogs</Link>
         </div>
