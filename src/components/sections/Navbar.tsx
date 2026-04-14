@@ -2,11 +2,11 @@
 import { useState } from 'react'
 import Link from 'next/link'
 import { motion, AnimatePresence } from 'motion/react'
-import { ChevronDown, X, Menu } from 'lucide-react'
-
+import { ChevronDown, X, Menu } from 'lucide-react' 
+ 
 export default function Navbar() {
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false)
-
+ 
   return (
     <header className="w-full relative z-50">
       <nav className="w-full flex items-center justify-between px-6 py-4 max-w-7xl mx-auto relative z-20 bg-[#f5f2eb]/80 backdrop-blur-sm border-b border-[#e5e2db]">
@@ -25,9 +25,12 @@ export default function Navbar() {
         </div>
 
         <div className="flex items-center gap-4">
-          <button className="hidden md:flex bg-[#008c73] hover:bg-[#007a64] text-white px-5 py-2.5 rounded-lg font-medium text-sm transition-colors items-center gap-2">
-            Contact <ChevronDown className="w-4 h-4 -rotate-90" />
-          </button>
+        <Link
+  href="/book-a-call"
+  className="bg-[#008c73] hover:bg-[#007a64] text-white px-5 py-3 rounded-lg font-medium text-sm flex items-center justify-center gap-2 mt-2 w-full"
+>
+  Book a Call<ChevronDown className="w-4 h-4 -rotate-90" />
+</Link>
           <button
             className="md:hidden p-2 text-gray-700 hover:bg-gray-200 rounded-lg transition-colors"
             onClick={() => setIsMobileMenuOpen(!isMobileMenuOpen)}
@@ -52,9 +55,12 @@ export default function Navbar() {
               <a href="/#pricing" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200">Pricing</a>
               <a href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200">About Us</a>
               <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200 font-semibold">Blogs</Link>
-              <button className="bg-[#008c73] hover:bg-[#007a64] text-white px-5 py-3 rounded-lg font-medium text-sm flex items-center justify-center gap-2 mt-2 w-full">
-                Contact <ChevronDown className="w-4 h-4 -rotate-90" />
-              </button>
+             <Link
+  href="/book-a-call"
+  className="bg-[#008c73] hover:bg-[#007a64] text-white px-5 py-3 rounded-lg font-medium text-sm flex items-center justify-center gap-2 mt-2 w-full"
+>
+  Book a Call <ChevronDown className="w-4 h-4 -rotate-90" />
+</Link>
             </div>
           </motion.div>
         )}

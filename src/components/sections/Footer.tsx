@@ -37,8 +37,8 @@ export default function Footer() {
         <div className="flex flex-col md:flex-row items-center justify-between border-t border-white/10 pt-8 mb-16">
           {/* <span className="text-white/60 text-sm border border-white/10 px-3 py-1 rounded-full mb-4 md:mb-0">Created by VidSaaS</span> */}
           <div className="flex items-center gap-6 text-sm text-white/60">
-            <a href="#" className="hover:text-white transition-colors">Privacy Policy</a>
-            <a href="#" className="hover:text-white transition-colors">Terms of Service</a>
+            <a href="/privacy-policy" className="hover:text-white transition-colors">Privacy Policy</a>
+            <a href="/terms" className="hover:text-white transition-colors">Terms of Service</a>
           </div>
         </div>
         <div className="w-full flex justify-center overflow-hidden">
