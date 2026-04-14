@@ -1,17 +1,17 @@
-import Hero from '@/components/vidsaas/Hero'
-import VideoSection from '@/components/vidsaas/VideoSection'
+import Hero from "@/components/sections/Hero";
+import VideoSection from "@/components/sections/VideoSection";
 // import LogoTicker from '@/components/vidsaas/LogoTicker'
-import ServicesSection from '@/components/vidsaas/ServicesSection'
-import PortfolioSection from '@/components/vidsaas/PortfolioSection'
-import IntegrationsSection from '@/components/vidsaas/IntegrationsSection'
-import AboutSection from '@/components/vidsaas/AboutSection'
-import TestimonialsSection from '@/components/vidsaas/TestimonialsSection'
-import PortalIntroSection from '@/components/vidsaas/PortalIntrosection'
-import PortalDashboardSection from '@/components/vidsaas/PortalDashboardSection'
-import ComparisonSection from '@/components/vidsaas/ComparisonSection'
-import PricingSection from '@/components/vidsaas/PricingSection'
-import FAQSection from '@/components/vidsaas/FAQSection'
-import CTASection from '@/components/vidsaas/CTASection'
+import ServicesSection from "@/components/sections/ServicesSection";
+import PortfolioSection from "@/components/sections/PortfolioSection";
+import IntegrationsSection from "@/components/sections/IntegrationsSection";
+import AboutSection from "@/components/sections/AboutSection";
+import TestimonialsSection from "@/components/sections/TestimonialsSection";
+import PortalIntroSection from "@/components/sections/PortalIntrosection";
+import PortalDashboardSection from "@/components/sections/PortalDashboardSection";
+import ComparisonSection from "@/components/sections/ComparisonSection";
+import PricingSection from "@/components/sections/PricingSection";
+import FAQSection from "@/components/sections/FAQSection";
+import CTASection from "@/components/sections/CTASection";
 
 export default function HomePage() {
   return (
@@ -31,5 +31,5 @@ export default function HomePage() {
       <FAQSection />
       <CTASection />
     </main>
-  )
+  );
 }
