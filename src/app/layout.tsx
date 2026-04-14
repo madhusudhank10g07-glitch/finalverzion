@@ -1,29 +1,25 @@
-import type { Metadata } from "next";
-import "./globals.css";
-import VisualEditsMessenger from "../visual-edits/VisualEditsMessenger";
-import ErrorReporter from "@/components/ErrorReporter";
-import Script from "next/script";
-import { GoogleAnalytics } from '@next/third-parties/google'
-
+import type { Metadata } from 'next'
+import './globals.css'
+import Navbar from '@/components/vidsaas/Navbar'
+import Footer from '@/components/vidsaas/Footer'
 
 export const metadata: Metadata = {
-  title: "Final Verzion",
-  description: "Final Verzion B2B Video production explainer video services company we serve explainer videos , product demo ,premium looking marketing video ads for startups, tech companies across all size across all foreign countries from india   ",
-viewport: "width=device-width, initial-scale=1",
-};
+  title: 'Final Verzion - Explain Your SaaS in Under 60 Seconds',
+  description: 'We craft high-converting explainer videos that simplify complex software.',
+}
 
 export default function RootLayout({
   children,
-}: Readonly<{
-  children: React.ReactNode;
-}>) {
+}: {
+  children: React.ReactNode
+}) {
   return (
     <html lang="en">
-      <body className="antialiased overflow-x-hidden w-full max-w-[100vw]">
+      <body className="min-h-screen bg-dot-pattern relative overflow-hidden flex flex-col">
+        <Navbar />
         {children}
-         <GoogleAnalytics gaId="G-PZ21G7CZZB" />
-        <VisualEditsMessenger />
+        <Footer />
       </body>
     </html>
-  );
+  )
 }
