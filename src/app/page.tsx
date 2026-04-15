@@ -26,7 +26,7 @@ export default function HomePage() {
       <TestimonialsSection />
       {/* <PortalIntroSection />
       <PortalDashboardSection /> */}
-      <ComparisonSection />
+      {/* <ComparisonSection /> */}
       {/* <PricingSection /> */}
       <FAQSection />
       <CTASection />
