@@ -185,6 +185,7 @@ export default function LeadModal({ isOpen, onClose }: LeadModalProps) {
                 <option value="" disabled>
                   Select budget range
                 </option>
+                <option value="$1k - $5k">$1k – $5k</option>
                 <option value="$5k - $10k">$5k - $10k</option>
                 <option value="$10k - $25k">$10k - $25k</option>
                 <option value="$25k - $50k">$25k - $50k</option>

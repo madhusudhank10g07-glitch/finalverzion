@@ -31,6 +31,7 @@ export default function Navbar() {
           {/* <a href="/#pricing" className="hover:text-[#008c73] transition-colors">Pricing</a> */}
           <a href="/#about" className="hover:text-[#008c73] transition-colors">About Us</a>
           <Link href="/blog" className="hover:text-[#008c73] transition-colors font-semibold">Blogs</Link>
+          <Link href="/contact" className="hover:text-[#008c73] transition-colors font-semibold">Contact</Link>
         </div>
 
         <div className="flex items-center gap-4">
@@ -64,6 +65,7 @@ export default function Navbar() {
               <a href="/#pricing" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200">Pricing</a>
               <a href="/#about" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200">About Us</a>
               <Link href="/blogs" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200 font-semibold">Blogs</Link>
+               <Link href="/contact" onClick={() => setIsMobileMenuOpen(false)} className="hover:text-[#008c73] py-2 border-b border-gray-200 font-semibold">Contact</Link>
              <Link
   href="/book-a-call"
   className="bg-[#008c73] hover:bg-[#007a64] text-white px-5 py-3 rounded-lg font-medium text-sm flex items-center justify-center gap-2 mt-2 w-full"
