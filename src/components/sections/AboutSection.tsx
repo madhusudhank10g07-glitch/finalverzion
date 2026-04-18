@@ -17,7 +17,7 @@ export default function AboutSection() {
             />
           </div>
           <div className="absolute -bottom-8 -right-8 bg-[#1a3b34] text-white p-8 rounded-2xl shadow-xl max-w-xs hidden md:block">
-            <div className="text-4xl font-serif font-medium mb-2">10+</div>
+            <div className="text-4xl font-serif font-medium mb-2">5+</div>
             <div className="text-white/80 text-sm">
               Years of experience explaining complex software to the world.
             </div>
@@ -48,13 +48,13 @@ export default function AboutSection() {
           <div className="grid grid-cols-2 gap-8">
             <div>
               <div className="text-3xl font-serif font-medium text-primary mb-2">
-                500+
+                100+
               </div>
               <div className="text-gray-600 text-sm">Videos Produced</div>
             </div>
             <div>
               <div className="text-3xl font-serif font-medium text-primary mb-2">
-                $50M+
+                $10M+
               </div>
               <div className="text-gray-600 text-sm">Client Revenue Generated</div>
             </div>
