@@ -11,7 +11,8 @@ import {
   Smartphone,
   Tv,
   Film,
-} from "lucide-react";
+} from "lucide-react"; 
+import Link from "next/link";
 
 const platforms = [
   { icon: <Youtube className="w-8 h-8 text-[#FF0000]" />, color: "bg-red-50" },
@@ -61,10 +62,11 @@ export default function IntegrationsSection() {
           Deliver your message seamlessly across all your marketing channels,
           from your landing page to social media and sales presentations.
         </p>
-
+<Link href="/book-a-call" className="w-full sm:w-auto">
         <button className="bg-primary hover:bg-primary-hover text-white px-8 py-3.5 rounded-lg font-medium transition-colors">
-          Get a Free Quote
+          Book a Call
         </button>
+        </Link>
       </div>
 
       {/* Bottom row of platforms */}

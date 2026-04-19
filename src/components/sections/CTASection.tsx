@@ -1,7 +1,7 @@
 "use client";
 
 import { Play, ChevronDown } from "lucide-react";
-
+import Link from "next/link";
 export default function CTASection() {
   return (
     <section
@@ -45,12 +45,12 @@ export default function CTASection() {
           </p>
 
           <div className="flex flex-col sm:flex-row items-center gap-4 w-full sm:w-auto">
+            <Link href="/book-a-call" className="w-full sm:w-auto">
             <button className="w-full sm:w-auto bg-transparent border border-white/30 hover:bg-white/10 text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center">
-              Get a Free Quote
+              Book a Call
             </button>
-            <button className="w-full sm:w-auto bg-[#1a3b34] hover:bg-[#122a25] text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center justify-center gap-2">
-              View Pricing <ChevronDown className="w-4 h-4 -rotate-90" />
-            </button>
+            </Link>
+           
           </div>
         </div>
       </div>

@@ -7,7 +7,7 @@ import { X, Plus, ChevronDown } from "lucide-react";
 const faqs = [
   {
     q: "How long does it take to produce a video?",
-    a: "Typically 4-6 weeks from kickoff to final delivery, depending on the style (2D vs 3D) and length of the video.",
+    a: "Typically 2-3 weeks from kickoff to final delivery, depending on the style (2D vs 3D) and length of the video.",
   },
   {
     q: "What is your pricing structure?",
@@ -16,11 +16,7 @@ const faqs = [
   {
     q: "Do you write the script?",
     a: "Yes, our expert copywriters handle the scriptwriting process. We work closely with you to ensure your message is clear, compelling, and accurate.",
-  },
-  {
-    q: "Can we provide our own voiceover?",
-    a: "Absolutely! We can work with your provided audio or source professional voice talent for you from our extensive network.",
-  },
+  }, 
   {
     q: "What if we need revisions?",
     a: "Our standard packages include 2 rounds of revisions at each major stage (script, storyboard, animation) to ensure you are completely satisfied with the final product.",
@@ -53,9 +49,7 @@ export default function FAQSection() {
           deliverables.
         </p>
 
-        <button className="bg-primary hover:bg-primary-hover text-white px-6 py-3 rounded-lg font-medium transition-colors flex items-center gap-2">
-          Contact Us <ChevronDown className="w-4 h-4 -rotate-90" />
-        </button>
+       
       </div>
 
       <div className="lg:w-2/3 flex flex-col gap-4">
