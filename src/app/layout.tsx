@@ -3,7 +3,8 @@ import "./globals.css";
 import Navbar from "@/components/sections/Navbar";
 import Footer from "@/components/sections/Footer";
 import { GoogleAnalytics } from "@next/third-parties/google";
-
+import { TrackUTMParams } from "@/components/TrackUTMParams";
+ 
 export const metadata: Metadata = {
   title: "Final Verzion - Explain Your SaaS in Under 60 Seconds",
   description:
@@ -18,6 +19,7 @@ export default function RootLayout({
   return (
     <html lang="en">
       <body className="min-h-screen bg-dot-pattern relative overflow-hidden flex flex-col">
+         <TrackUTMParams />
         <Navbar />
         {children}
         <Footer />
