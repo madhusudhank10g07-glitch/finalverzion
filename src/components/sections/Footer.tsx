@@ -1,5 +1,5 @@
 import { Youtube, Twitter, Instagram } from 'lucide-react'
-
+import Image from "next/image";
 export default function Footer() {
   const socialLinks = [
     { icon: Youtube, href: 'https://www.youtube.com/' },
@@ -8,12 +8,12 @@ export default function Footer() {
   ]
 
   const navLinks1 = [
-    { label: 'Home', href: '/' },
-    { label: 'Services', href: '/services' },
-    { label: 'How it works', href: '/how-it-works' },
-    { label: 'Pricing', href: '/pricing' },
-    { label: 'Testimonials', href: '/testimonials' },
-    { label: "FAQ's", href: '/faq' },
+    // { label: 'Home', href: '/' },
+    // { label: 'Services', href: '/services' },
+    // { label: 'How it works', href: '/how-it-works' },
+    // { label: 'Pricing', href: '/pricing' },
+    // { label: 'Testimonials', href: '/testimonials' },
+    // { label: "FAQ's", href: '/faq' },
   ]
 
   const navLinks2 = [
@@ -51,8 +51,23 @@ export default function Footer() {
             <h3 className="text-xl font-medium mb-6 text-white/90">
               Turn complex software into simple stories
             </h3>
-
-            <div className="flex items-center gap-3">
+ <div className="flex justify-center sm:justify-start">
+      <a
+        href="https://clutch.co/profile/final-verzion"
+        target="_blank"
+        rel="noopener noreferrer"
+        className="block hover:scale-105 transition-transform duration-300"
+      >
+        <Image
+          src="/clutch.png" // replace with actual clutch badge
+          alt="Clutch 5 Star Reviews"
+          width={180}
+          height={60}
+           className="object-contain rounded-lg"
+        />
+      </a>
+    </div>
+            {/* <div className="flex items-center gap-3">
               {socialLinks.map(({ icon: Icon, href }, i) => (
                 <a
                   key={i}
@@ -64,7 +79,7 @@ export default function Footer() {
                   <Icon className="w-5 h-5 text-white/70" />
                 </a>
               ))}
-            </div>
+            </div> */}
           </div>
 
           {/* Right Links */}
