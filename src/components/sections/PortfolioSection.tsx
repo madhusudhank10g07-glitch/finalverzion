@@ -22,7 +22,7 @@ import LeadModal from "./LeadModal";
 const portfolios = [
 { 
   embedCode: `<iframe 
-    src="https://www.youtube-nocookie.com/embed/1JHfnV-LebE?autoplay=1&loop=1&playlist=1JHfnV-LebE&rel=0&modestbranding=1&playsinline=1"
+    src="https://www.youtube-nocookie.com/embed/1JHfnV-LebE?autoplay=0&loop=1&playlist=1JHfnV-LebE&rel=0&modestbranding=1&playsinline=1"
     title="Video player"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -31,7 +31,7 @@ const portfolios = [
 },
  { 
   embedCode: `<iframe 
-    src="https://www.youtube-nocookie.com/embed/4dEIdypd2oQ?autoplay=1&loop=1&playlist=4dEIdypd2oQ&rel=0&modestbranding=1&playsinline=1"
+    src="https://www.youtube-nocookie.com/embed/4dEIdypd2oQ?autoplay=0&loop=1&playlist=4dEIdypd2oQ&rel=0&modestbranding=1&playsinline=1"
     title="Video player"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -40,7 +40,7 @@ const portfolios = [
 },
 { 
   embedCode: `<iframe 
-    src="https://www.youtube-nocookie.com/embed/i0e3nSzvePI?autoplay=1&loop=1&playlist=i0e3nSzvePI&rel=0&modestbranding=1&playsinline=1"
+    src="https://www.youtube-nocookie.com/embed/i0e3nSzvePI?autoplay=0&loop=1&playlist=i0e3nSzvePI&rel=0&modestbranding=1&playsinline=1"
     title="Video player"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -49,7 +49,7 @@ const portfolios = [
 },
 { 
   embedCode: `<iframe 
-    src="https://www.youtube-nocookie.com/embed/V1akK8nDgXk?autoplay=1&loop=1&playlist=V1akK8nDgXk&rel=0&modestbranding=1&playsinline=1"
+    src="https://www.youtube-nocookie.com/embed/V1akK8nDgXk?autoplay=0&loop=1&playlist=V1akK8nDgXk&rel=0&modestbranding=1&playsinline=1"
     title="Video player"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -58,7 +58,7 @@ const portfolios = [
 },
 { 
   embedCode: `<iframe 
-    src="https://www.youtube-nocookie.com/embed/KDkqO--faWM?autoplay=1&loop=1&playlist=KDkqO--faWM&rel=0&modestbranding=1&playsinline=1"
+    src="https://www.youtube-nocookie.com/embed/KDkqO--faWM?autoplay=0&loop=1&playlist=KDkqO--faWM&rel=0&modestbranding=1&playsinline=1"
     title="Video player"
     frameborder="0"
     allow="autoplay; encrypted-media"
@@ -67,7 +67,7 @@ const portfolios = [
 },
 { 
   embedCode: `<iframe 
-    src="https://www.youtube-nocookie.com/embed/Fmh3OSDh9AI?autoplay=1&loop=1&playlist=Fmh3OSDh9AI&rel=0&modestbranding=1&playsinline=1"
+    src="https://www.youtube-nocookie.com/embed/Fmh3OSDh9AI?autoplay=0&loop=1&playlist=Fmh3OSDh9AI&rel=0&modestbranding=1&playsinline=1"
     title="Video player"
     frameborder="0"
     allow="autoplay; encrypted-media"

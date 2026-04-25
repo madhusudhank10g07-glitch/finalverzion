@@ -1,6 +1,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=Playfair+Display:ital,wght@0,500;0,600;0,700;1,500;1,600;1,700&display=swap');
 @import "tailwindcss";
 @import "tw-animate-css";
+@plugin "@tailwindcss/typography";
 
 html, body {
   max-width: 100%;
@@ -37,8 +38,13 @@ html, body {
     line-height: 1.6;
   }
 
-  /* Reset heading styles from old theme */
-  h1, h2, h3, h4, h5, h6 {
+  /* Only reset headings OUTSIDE of prose — don't touch .prose headings */
+  :not(.prose) h1,
+  :not(.prose) h2,
+  :not(.prose) h3,
+  :not(.prose) h4,
+  :not(.prose) h5,
+  :not(.prose) h6 {
     font-weight: inherit;
     letter-spacing: inherit;
     line-height: inherit;
@@ -52,7 +58,6 @@ html, body {
   }
 }
 
-/* VidSaaS custom utilities */
 .bg-dot-pattern {
   background-color: #f5f2eb;
   background-image: radial-gradient(#d4cfc6 1px, transparent 1px);
@@ -72,4 +77,7 @@ html, body {
 .custom-scrollbar::-webkit-scrollbar-thumb {
   background: #008c73;
   border-radius: 2px;
+}
+.custom-scrollbar::-webkit-scrollbar-thumb:hover {
+  background: #007a64;
 }
