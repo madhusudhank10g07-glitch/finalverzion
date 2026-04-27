@@ -20,28 +20,88 @@ import LeadModal from "./LeadModal";
 
 
 const portfolios = [
-  { 
-    embedCode: `<iframe id="js_video_iframe" src="https://jumpshare.com/embed/mM4YK1ZP187rJShdGLSg" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe>`,
-  },
-   { 
-embedCode:`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe id="js_video_iframe" src="https://jumpshare.com/embed/PkH8w1C3a71GrmXxT3Ow" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
-  },
-  {
-    embedCode:`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe id="js_video_iframe" src="https://jumpshare.com/embed/roBf8FAlPxmuR2g8NIei" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
-  },
-  {
-    embedCode:`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe id="js_video_iframe" src="https://jumpshare.com/embed/AiNlVX01bqoYgFXgPCo3" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
-  }
-  ,{
-    embedCode:`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe id="js_video_iframe" src="https://jumpshare.com/embed/4sNaqf8zP9leSmlZWV8C" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
-  },{
-    embedCode:`<div style="position: relative; padding-bottom: 56.25%; height: 0;"><iframe id="js_video_iframe" src="https://jumpshare.com/embed/O6Y4ZFL7SfKjM3bB0hhS" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen style="position: absolute; top: 0; left: 0; width: 100%; height: 100%;"></iframe></div>`
-  }
+{ 
+  embedCode: `<iframe 
+<<<<<<< HEAD
+    src="https://www.youtube-nocookie.com/embed/1JHfnV-LebE?autoplay=0&loop=1&playlist=1JHfnV-LebE&rel=0&modestbranding=1&playsinline=1"
+=======
+    src="https://www.youtube-nocookie.com/embed/1JHfnV-LebE?autoplay=1&loop=1&playlist=1JHfnV-LebE&rel=0&modestbranding=1&playsinline=1"
+>>>>>>> c799b53088f05c60b438d0d6d225c7873f0b61a5
+    title="Video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>`,
+},
+ { 
+  embedCode: `<iframe 
+<<<<<<< HEAD
+    src="https://www.youtube-nocookie.com/embed/4dEIdypd2oQ?autoplay=0&loop=1&playlist=4dEIdypd2oQ&rel=0&modestbranding=1&playsinline=1"
+=======
+    src="https://www.youtube-nocookie.com/embed/4dEIdypd2oQ?autoplay=1&loop=1&playlist=4dEIdypd2oQ&rel=0&modestbranding=1&playsinline=1"
+>>>>>>> c799b53088f05c60b438d0d6d225c7873f0b61a5
+    title="Video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>`,
+},
+{ 
+  embedCode: `<iframe 
+<<<<<<< HEAD
+    src="https://www.youtube-nocookie.com/embed/i0e3nSzvePI?autoplay=0&loop=1&playlist=i0e3nSzvePI&rel=0&modestbranding=1&playsinline=1"
+=======
+    src="https://www.youtube-nocookie.com/embed/i0e3nSzvePI?autoplay=1&loop=1&playlist=i0e3nSzvePI&rel=0&modestbranding=1&playsinline=1"
+>>>>>>> c799b53088f05c60b438d0d6d225c7873f0b61a5
+    title="Video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>`,
+},
+{ 
+  embedCode: `<iframe 
+<<<<<<< HEAD
+    src="https://www.youtube-nocookie.com/embed/V1akK8nDgXk?autoplay=0&loop=1&playlist=V1akK8nDgXk&rel=0&modestbranding=1&playsinline=1"
+=======
+    src="https://www.youtube-nocookie.com/embed/V1akK8nDgXk?autoplay=1&loop=1&playlist=V1akK8nDgXk&rel=0&modestbranding=1&playsinline=1"
+>>>>>>> c799b53088f05c60b438d0d6d225c7873f0b61a5
+    title="Video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>`,
+},
+{ 
+  embedCode: `<iframe 
+<<<<<<< HEAD
+    src="https://www.youtube-nocookie.com/embed/KDkqO--faWM?autoplay=0&loop=1&playlist=KDkqO--faWM&rel=0&modestbranding=1&playsinline=1"
+=======
+    src="https://www.youtube-nocookie.com/embed/KDkqO--faWM?autoplay=1&loop=1&playlist=KDkqO--faWM&rel=0&modestbranding=1&playsinline=1"
+>>>>>>> c799b53088f05c60b438d0d6d225c7873f0b61a5
+    title="Video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>`,
+},
+{ 
+  embedCode: `<iframe 
+<<<<<<< HEAD
+    src="https://www.youtube-nocookie.com/embed/Fmh3OSDh9AI?autoplay=0&loop=1&playlist=Fmh3OSDh9AI&rel=0&modestbranding=1&playsinline=1"
+=======
+    src="https://www.youtube-nocookie.com/embed/Fmh3OSDh9AI?autoplay=1&loop=1&playlist=Fmh3OSDh9AI&rel=0&modestbranding=1&playsinline=1"
+>>>>>>> c799b53088f05c60b438d0d6d225c7873f0b61a5
+    title="Video player"
+    frameborder="0"
+    allow="autoplay; encrypted-media"
+    allowfullscreen>
+  </iframe>`,
+},
 
 ];
 
- 
-function VideoThumbnail({
+ function VideoThumbnail({
   item,
 }: {
   item: (typeof portfolios)[0];
