@@ -1,3 +1,89 @@
+// import Link from "next/link";
+// import Image from "next/image";
+// import type { Metadata } from "next";
+// import { client, urlFor } from "@/lib/sanity";
+// import { postsQuery } from "@/lib/queries";
+
+// export const revalidate = 60;
+
+// export const metadata: Metadata = {
+//   title: "Blog",
+//   description: "Latest articles, updates, and insights.",
+//   alternates: {
+//     canonical: "/blog",
+//   },
+//   openGraph: {
+//     title: "Blog",
+//     description: "Latest articles, updates, and insights.",
+//     url: "/blog",
+//     type: "website",
+//   },
+// };
+
+// async function getPosts() {
+//   return client.fetch(postsQuery);
+// }
+
+// export default async function BlogPage() {
+//   const posts = await getPosts();
+
+//   return (
+//     <main className="mx-auto max-w-6xl px-4 py-12">
+//       <div className="mb-10">
+//         <p className="text-sm font-medium uppercase tracking-wide text-gray-500">
+//           Blog
+//         </p>
+//         <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900">
+//           Latest Articles
+//         </h1>
+//         <p className="mt-4 max-w-2xl text-gray-600">
+//           Read the latest insights, guides, and updates.
+//         </p>
+//       </div>
+
+//       <div className="grid gap-8 sm:grid-cols-2 lg:grid-cols-3">
+//         {posts
+//           .filter((post: any) => post.slug)
+//           .map((post: any) => (
+//             <article
+//               key={post._id}
+//               className="overflow-hidden rounded-2xl border border-gray-200 bg-white shadow-sm transition hover:shadow-md"
+//             >
+//               <Link href={`/blog/${post.slug}`}>
+//                 {post.mainImage && (
+//                   <div className="relative aspect-[16/10] w-full">
+//                     <Image
+//                       src={urlFor(post.mainImage).width(900).height(560).url()}
+//                       alt={post.title}
+//                       fill
+//                       className="object-cover"
+//                     />
+//                   </div>
+//                 )}
+
+//                 <div className="p-5">
+//                   <h2 className="text-xl font-semibold text-gray-900">
+//                     {post.title}
+//                   </h2>
+
+//                   {post.excerpt && (
+//                     <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
+//                       {post.excerpt}
+//                     </p>
+//                   )}
+
+//                   <div className="mt-5 text-sm font-medium text-black">
+//                     Read more →
+//                   </div>
+//                 </div>
+//               </Link>
+//             </article>
+//           ))}
+//       </div>
+//     </main>
+//   );
+// }
+
 import Link from "next/link";
 import Image from "next/image";
 import type { Metadata } from "next";
@@ -6,17 +92,26 @@ import { postsQuery } from "@/lib/queries";
 
 export const revalidate = 60;
 
+const BASE_URL = "https://finalverzion.com";
+
 export const metadata: Metadata = {
-  title: "Blog",
-  description: "Latest articles, updates, and insights.",
+  title: "Video Marketing Blog | Explainer Video Tips for SaaS | Final Verzion",
+  description:
+    "Expert guides on explainer videos, SaaS content marketing, and GTM strategy for tech companies in the USA and UK. By the Final Verzion team.",
   alternates: {
-    canonical: "/blog",
+    canonical: `${BASE_URL}/blog`,
+    languages: {
+      "en-US": `${BASE_URL}/blog`,
+      "en-GB": `${BASE_URL}/blog`,
+    },
   },
   openGraph: {
-    title: "Blog",
-    description: "Latest articles, updates, and insights.",
-    url: "/blog",
+    title: "Video Marketing Blog | Final Verzion",
+    description:
+      "Expert guides on explainer videos, SaaS content marketing, and GTM strategy.",
+    url: `${BASE_URL}/blog`,
     type: "website",
+    images: [{ url: `${BASE_URL}/og-default.jpg`, width: 1200, height: 630 }],
   },
 };
 
@@ -34,10 +129,11 @@ export default async function BlogPage() {
           Blog
         </p>
         <h1 className="mt-2 text-4xl font-bold tracking-tight text-gray-900">
-          Latest Articles
+          Video Marketing & SaaS GTM Insights
         </h1>
         <p className="mt-4 max-w-2xl text-gray-600">
-          Read the latest insights, guides, and updates.
+          Explainer video strategy, SaaS content marketing, and GTM playbooks
+          for tech companies scaling in the USA and UK.
         </p>
       </div>
 
@@ -60,18 +156,20 @@ export default async function BlogPage() {
                     />
                   </div>
                 )}
-
                 <div className="p-5">
+                  {post.categories?.[0]?.title && (
+                    <p className="mb-2 text-xs font-semibold uppercase tracking-wide text-teal-600">
+                      {post.categories[0].title}
+                    </p>
+                  )}
                   <h2 className="text-xl font-semibold text-gray-900">
                     {post.title}
                   </h2>
-
                   {post.excerpt && (
                     <p className="mt-3 line-clamp-3 text-sm leading-6 text-gray-600">
                       {post.excerpt}
                     </p>
                   )}
-
                   <div className="mt-5 text-sm font-medium text-black">
                     Read more →
                   </div>
