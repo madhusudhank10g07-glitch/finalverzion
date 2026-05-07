@@ -19,9 +19,7 @@ export default function BookACallPage() {
       ></div>
 
       <div className="max-w-5xl mx-auto px-4 w-full text-center relative z-10 flex flex-col items-center">
-        <div className="inline-flex items-center gap-2 text-[#008c73] font-medium text-sm mb-6 bg-[#008c73]/10 px-4 py-1.5 rounded-full">
-          <Check className="w-4 h-4" /> Request Received
-        </div>
+        
 
         <h1 className="font-serif text-4xl md:text-6xl font-medium text-[#1a1a1a] mb-6">
           Need your project done{" "}
