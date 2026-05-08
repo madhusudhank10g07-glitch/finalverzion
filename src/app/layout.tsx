@@ -6,9 +6,12 @@ import { GoogleAnalytics } from "@next/third-parties/google";
 import { TrackUTMParams } from "@/components/TrackUTMParams";
  
 export const metadata: Metadata = {
-  title: "Final Verzion - Explain Your SaaS in Under 60 Seconds",
+  title: "FinalVerzion - Explain Your SaaS in Under 60 Seconds",
   description:
     "We craft high-converting explainer videos that simplify complex software.",
+     alternates: {
+    canonical: "/",
+  },
 };
 
 export default function RootLayout({
